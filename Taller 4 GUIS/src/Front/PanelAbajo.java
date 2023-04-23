@@ -1,27 +1,26 @@
-package Front;
-
 import java.awt.*;
-import java.awt.event.*;
 
 import javax.swing.*;
 
 public class PanelAbajo extends JPanel{
 
-    private JLabel JuegosLabel;
-    private int contarMousePressed=0;
+    private JLabel labelgame;
+    private int contadorClicks=0;
 
-    public PanelAbajo(PanelPrincipal myMainFrame){
-        setSize(500,500);
+    public PanelAbajo(FramePrincipal myMainFrame){
 		setLayout(new FlowLayout());
 		setBackground(Color.WHITE);
 
-        JuegosLabel = new JLabel("Click que se han hecho: " + contarMousePressed);
+        labelgame = new JLabel("Clicks: " + contadorClicks);
 
-        this.add(JuegosLabel);
+        this.add(labelgame);
         this.setVisible(true);
     }
-    public void aumentarContador(){
-        this.contarMousePressed+=1;
-        this.JuegosLabel.setText("Jugadas: " + contarMousePressed);
+    public void ContadorUp(){
+        this.contadorClicks+=1;
+        this.labelgame.setText("Jugadas: " + contadorClicks);
+    }
+    public void restartContadorClicks(){
+        this.contadorClicks=0;
     }
 }
