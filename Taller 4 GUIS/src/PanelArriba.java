@@ -1,20 +1,12 @@
-package Front;
-
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.*;
-
-import javax.swing.*;
-
-public class TopPanel extends JPanel implements ActionListener{
+public class PanelArriba extends JPanel implements ActionListener{
 	
-	private JLabel TamanioTxt= new JLabel("Tamaño: ");
+	private JLabel TamanioTxt= new JLabel("Tamaï¿½o: ");
 	private JComboBox<String> tamanioComboBox;
 	
 	private JLabel DificultadTxt=new JLabel("Dificultad: ");
-	JRadioButton facil =new JRadioButton("Fácil");
+	JRadioButton facil =new JRadioButton("Fï¿½cil");
 	JRadioButton medio =new JRadioButton("Medio");
-	JRadioButton dificil =new JRadioButton("Difícil");
+	JRadioButton dificil =new JRadioButton("Difï¿½cil");
 	ButtonGroup grupoDificultad;
 
 	private Board myBoard;
