@@ -12,7 +12,7 @@ public class PanelArriba extends JPanel implements ActionListener{
 	private Board myBoard;
 	
 	
-	public TopPanel (MainFrame myMainFrame) {
+	public PanelArriba (MainFrame myMainFrame) {
 		
 		setSize(500,500);
 		setLayout(new FlowLayout());
